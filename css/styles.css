@@ -1,0 +1,342 @@
+html {
+    font-size: 112.5%;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: calc(46/18 * 1rem);
+    margin-top: 37px;
+}
+
+h2 {
+    font-size: calc(38/18 * 1rem);
+}
+
+h3 {
+    font-size: calc(30/18 * 1rem);
+}
+
+h4 {
+    font-size: calc(22/18 * 1rem);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+header,
+.banner-title,
+.about,
+footer,
+.gallery,
+.entries {
+    margin: 0 16px;
+}
+
+/* Header Styles */
+
+
+nav ul {
+    padding-left: 0;
+    display: flex;
+}
+
+nav a {
+    color: #adb1b3;
+    padding: 18px 10px;
+    border: 1px solid #adb1b3;
+    border-radius: 5px;
+    margin-right: 18px;
+}
+
+/* Footer Styles */
+
+footer ul {
+    display: flex;
+    padding: 0 0 24px 0;
+}
+
+footer a {
+    text-decoration: underline;
+    color: #adb1b3;
+    margin-right: 18px;
+}
+
+/* Index Styles */
+
+.banner {
+    background-image: url(../img/white-linear-angled-architecture-600px.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    height: 200px;
+    margin: 25px 0 40px;
+}
+
+.banner h2 {
+    margin: 0;
+}
+
+.about {
+    padding-bottom: calc(72px - 18px);
+}
+
+.about section {
+    border: 1px solid #6f7374;
+    margin-bottom: 18px;
+}
+
+.about h3 {
+    color: #e8e7e2;
+    padding: 30px 20px;
+    background-color: #6f7374;
+    margin: 0;
+}
+
+.about p {
+    margin: 0;
+    padding: 20px 20px 50px;
+}
+
+.feature {
+    background-color: #d8dbde;
+    padding: 0 16px 72px;
+}
+
+.feature img {
+    width: 100%;
+    padding-top: 54px;
+}
+
+.feature h2 {
+    margin: 0;
+    padding-top: 12px;
+}
+
+.feature p {
+    padding-bottom: 36px;
+}
+
+.feature a {
+    color: #e8e7e2;
+    background-color: #6f7374;
+    padding: 17px 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+/* Blog Styles */
+
+.blog {
+    background-color: #d8dbde;
+    margin-top: 33px;
+    padding-bottom: 55px;
+}
+
+.blog h2 {
+    margin: 0;
+    padding: 70px 0 10px 0;
+}
+
+.entries section {
+    background-color: #fff;
+    padding: 18px;
+    margin-bottom: 18px;
+}
+
+.entries img {
+    width: 100%;
+}
+
+/* Gallery Styles */
+
+.gallery-main {
+    background-color: #d8dbde;
+    padding: 69px 0 64px 0;
+    margin-top: 33px;
+}
+
+.gallery h2 {
+    margin: 0 0 9px;
+}
+
+.gallery img {
+    width: 100%;
+    margin-bottom: 27px;
+}
+
+@media (min-width: 576px) {
+
+    /* Index Styles */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h1 {
+        margin-top: 27px;
+    }
+
+    nav {
+        margin-top: 13px;
+    }
+
+    .banner {
+        background-image: url(../img/white-linear-angled-architecture-1100px.jpg);
+        height: 150px;
+    }
+
+    .banner h2 {
+        padding-top: 25px;
+    }
+
+    .about,
+    .feature-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .about section {
+        flex-basis: calc(96%/3);
+    }
+
+    .feature {
+        padding-bottom: 100px;
+    }
+
+    .feature img {
+        width: 33.5%;
+    }
+    
+    .feature-info div {
+        width: 64.5%;
+    }
+
+    .feature h2,
+    .feature img {
+        padding-top: 40px;
+    }
+
+    /* Blog Styles */
+    
+    .blog section {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    
+    .blog img {
+        max-width: calc((360/522 * 100%) - 1%);
+    }
+    
+    .info {
+        width: calc(100% - 1% - ((360/522 * 100%) - 1%));
+    }
+    
+    .info h3 {
+        margin-top: 3px;
+    }
+    
+    .blog section:nth-of-type(2n) img {
+        order: 1;
+    }
+
+    /* Gallery Styles */
+
+    .gallery-main {
+        margin-top: 0;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .gallery img:nth-of-type(2),
+    .gallery img:nth-of-type(3) {
+        width: calc(99%/2);
+    }
+
+    .gallery img:nth-of-type(4),
+    .gallery img:nth-of-type(5),
+    .gallery img:nth-of-type(6),
+    .gallery img:nth-of-type(7) {
+        width: calc((100% - (1%*3)) / 4);
+    }
+
+    .gallery img:nth-of-type(8) {
+        width: calc(99% * (2/3));
+    }
+
+    .gallery img:nth-of-type(9) {
+        width: calc(99% * (1/3));
+    }
+
+    /* Footer Styles */
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* I tried targetting the last bottom nav link specifically. I tried targetting both the li and the a in all cases, using last-of-type, last-child, nth-of-type, & nth-of-child, but nothing worked. The bottom style was the only fix that would work.*/
+
+    footer a {
+        margin-right: 0;
+        margin-left: 18px;
+    }
+
+}
+
+@media (min-width: 1300px) {
+
+    header,
+    .banner-title,
+    .about,
+    footer {
+        margin: 0;
+    }
+
+    /* Applying the container class to the h2 didn't work, so I targetted it seperately */
+    .container {
+        width: 1115px;
+        margin: 0 auto;
+    }
+    
+    /* Index Styles */
+
+    .banner {
+        background-image: url(../img/white-linear-angled-architecture-orig.jpg);
+        height: 360px;
+    }
+
+    .banner h2 {
+        padding-top: 33px;
+    }
+
+    .feature {
+        padding: 0 0 72px;
+    }
+    
+    .feature h2,
+    .feature img {
+        padding-top: 54px;
+    }
+    
+    /* Gallery Styles */
+
+    .gallery-main {
+        margin-top: 8px;
+    }
+
+}
